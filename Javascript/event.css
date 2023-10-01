@@ -1,0 +1,83 @@
+body {
+  height: 100vh;
+  padding: 50px 30px;
+}
+
+.click_me {
+  width: 230px;
+  height: 30px;
+  border: none;
+  background-color: darkslateblue;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.click_me:active {
+  opacity: 0.9;
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .btn_container,
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+#content {
+  text-align: center;
+}
+
+.btn-container {
+  width: 100%;
+  column-gap: 12px;
+  margin-top: 100px;
+}
+
+.button {
+  width: 100px;
+  height: 10px;
+  padding: 15px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.button:active {
+  opacity: 0.8;
+}
+
+.box {
+  width: 90px;
+  height: 90px;
+}
+
+/* custm styles */
+/* background colors */
+.bg-danger {
+  background-color: red;
+}
+
+.bg-success {
+  background-color: green;
+}
+
+/* text colors */
+.text-white {
+  color: white;
+}
+
+.hide {
+  display: none;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
