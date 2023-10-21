@@ -23,5 +23,15 @@
     "id": 5,
     "first_name": "Terungwa",
     "last_name": "John"
+  },
+  {
+    "id": 6,
+    "first_name": "Goodness",
+    "last_name": "John"
+  },
+  {
+    "id": 7,
+    "first_name": "Frank",
+    "last_name": "John"
   }
 ]
