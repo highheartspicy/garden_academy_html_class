@@ -11,61 +11,152 @@
     <section class="container">
       <section class="calculator-container">
         <div class="screen">
-          <div class="arithmetic-box text-gray fs-23">4 * 5</div>
-          <div class="result-box fs-35 bold-500">= 4,342</div>
+          <div class="arithmetic-box text-gray fs-23" id="input_screen"></div>
+          <div class="result-box bold-500" id="output_screen">
+            <span class="fs-28 text-secondary" id="equals"></span
+            ><span class="fs-35" id="output_display"></span>
+          </div>
         </div>
-        <div class="operand-box">
+        <div class="operand-box" id="mode_a">
           <aside class="numbers">
             <div class="numbers-row">
-              <div class="operand bg-gray">C</div>
-              <div class="operand bg-gray" style="font-size: 2.5em">
-                &otimes;
+              <div class="operand bg-gray operator" data-value="c">C</div>
+              <div
+                class="operand bg-gray operator"
+                data-value="BACKSPACE"
+                style="font-size: 2.5em"
+              >
+                &larr;
               </div>
-              <div class="operand bg-secondary">/</div>
-            </div>
-            <div class="numbers-row">
-              <div class="operand bg-light-dark text-secondary">7</div>
-              <div class="operand bg-light-dark text-secondary">8</div>
-              <div class="operand bg-light-dark text-secondary">9</div>
-            </div>
-            <div class="numbers-row">
-              <div class="operand bg-light-dark text-secondary">4</div>
-              <div class="operand bg-light-dark text-secondary">5</div>
-              <div class="operand bg-light-dark text-secondary">6</div>
-            </div>
-            <div class="numbers-row">
-              <div class="operand bg-light-dark text-secondary">1</div>
-              <div class="operand bg-light-dark text-secondary">2</div>
-              <div class="operand bg-light-dark text-secondary">3</div>
+              <div class="operand bg-secondary operator" data-value="/">/</div>
             </div>
             <div class="numbers-row">
               <div
-                class="operand bg-transparent text-secondary"
+                class="operand bg-light-dark text-secondary number"
+                data-value="7"
+              >
+                7
+              </div>
+              <div
+                class="operand bg-light-dark text-secondary number"
+                data-value="8"
+              >
+                8
+              </div>
+              <div
+                class="operand bg-light-dark text-secondary number"
+                data-value="9"
+              >
+                9
+              </div>
+            </div>
+            <div class="numbers-row">
+              <div
+                class="operand bg-light-dark text-secondary number"
+                data-value="4"
+              >
+                4
+              </div>
+              <div
+                class="operand bg-light-dark text-secondary number"
+                data-value="5"
+              >
+                5
+              </div>
+              <div
+                class="operand bg-light-dark text-secondary number"
+                data-value="6"
+              >
+                6
+              </div>
+            </div>
+            <div class="numbers-row">
+              <div
+                class="operand bg-light-dark text-secondary number"
+                data-value="1"
+              >
+                1
+              </div>
+              <div
+                class="operand bg-light-dark text-secondary number"
+                data-value="2"
+              >
+                2
+              </div>
+              <div
+                class="operand bg-light-dark text-secondary number"
+                data-value="3"
+              >
+                3
+              </div>
+            </div>
+            <div class="numbers-row">
+              <div
+                class="operand bg-transparent text-secondary switch_mode"
                 style="font-size: 3.5em"
               >
                 &cong;
               </div>
-              <div class="operand bg-light-dark text-secondary">0</div>
-              <div class="operand bg-light-dark text-secondary">
+              <div
+                class="operand bg-light-dark text-secondary number"
+                data-value="0"
+              >
+                0
+              </div>
+              <div
+                class="operand bg-light-dark text-secondary number"
+                data-value="."
+              >
                 <p style="margin-top: -10px; font-weight: bold">&period;</p>
               </div>
             </div>
           </aside>
           <aside class="symbols">
             <div class="numbers-row symbols-row">
-              <div class="operand bg-secondary" style="height: 70px">
+              <div
+                class="operand bg-secondary operator"
+                style="height: 70px"
+                data-value="*"
+              >
                 &lowast;
               </div>
-              <div class="operand bg-secondary" style="height: 70px">
+              <div
+                class="operand bg-secondary operator"
+                style="height: 70px"
+                data-value="-"
+              >
                 &minus;
               </div>
-              <div class="operand bg-secondary" style="height: 115px">
+              <div
+                class="operand bg-secondary operator"
+                style="height: 115px"
+                data-value="+"
+              >
                 &plus;
               </div>
-              <div class="operand bg-secondary h" style="height: 115px">
+              <div
+                class="operand bg-secondary operator"
+                style="height: 115px"
+                data-value="="
+              >
                 &equals;
               </div>
             </div>
+          </aside>
+        </div>
+        <div class="operand-box hide" id="mode_b">
+          <aside class="numbers">
+            <div class="numbers-row">
+              <div
+                class="operand bg-transparent text-secondary switch_mode"
+                style="font-size: 3.5em"
+              >
+                &cong;
+              </div>
+            </div>
+          </aside>
+          <aside class="symbols">
+            <div class="numbers-row symbols-row"></div>
           </aside>
         </div>
       </section>

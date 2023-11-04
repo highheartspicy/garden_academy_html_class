@@ -132,9 +132,17 @@ body {
   color: #19d765;
 }
 
+.text-green {
+  color: #0a7633;
+}
+
 /* fontsize */
 .fs-23 {
   font-size: 23px;
+}
+
+.fs-28 {
+  font-size: 28px;
 }
 
 .fs-35 {
@@ -144,4 +152,8 @@ body {
 /* bold */
 .bold-500 {
   font-weight: 500;
+}
+
+.hide {
+  display: none;
 }
