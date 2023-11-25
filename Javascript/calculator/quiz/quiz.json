@@ -50,5 +50,16 @@
       "Johannes Kepler"
     ],
     "answer": "Albert Einstein"
+  },
+  {
+    "id": 7,
+    "question": "In which year did Christopher Columbus first voyage to the Americas?",
+    "options": [
+      "Albert Einstein",
+      "Isaac Newton",
+      "Galileo Galilei",
+      "Johannes Kepler"
+    ],
+    "answer": "Albert Einstein"
   }
 ]
